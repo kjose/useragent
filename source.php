@@ -11,11 +11,6 @@ $url = $_GET['url'];
 $ua = $_GET['ua'];
 $ch = curl_init($url);
 $chHeaders = array(
-    'Accept: application/json',
-    'Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4',
-    'Accept-Encoding: gzip,deflate',
-    'Accept-Charset: windows-1251,utf-8;q=0.7,*;q=0.7',
-
 	'Content-type: text/html; charset=utf-8',
 	'User-Agent: ' . $ua,
 	'Cookie: ' . $cookie
